@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario de Busqueda</title>
+</head>
+<body>
+  <form action="results/" method="POST">
+    {% csrf_token %}
+    <div>
+      <label for="origen">Ciudad de Origen:</label>
+      <select name="origen">
+        <option value="Armenia">Armenia</option>
+        <option value="Medellin">Medellin</option>
+        <option value="Bogota">Bogota</option>
+        <option value="Cartagena">Cartagena</option>
+      </select>
+      <label for="destino">Ciudad destino:</label>
+      <select name="destino">
+        <option value="Armenia">Armenia</option>
+        <option value="Medellin">Medellin</option>
+        <option value="Bogota">Bogota</option>
+        <option value="Cartagena">Cartagena</option>
+      </select>
+    </div>
+    <div>
+      <label for="trayecto">viaje de ida y vuelta:</label>
+      <input type="radio" name="trayecto" id="solo_ida"> Solo ida        
+      <input type="radio" name="trayecto" id="ida_y_vu"> ida y vuelta 
+    </div>
+    <div>
+      <label for="f_origen">Fecha de origen</label>
+      <input type="date" name="f_origen">
+      <label for="f_regreso">Fecha de Regreso</label>
+      <input type="date" name="f_regreso">
+    </div>
+    <div>
+      <label for="nro_pasajes">Numero de pasajes</label>
+      <input type="number" name="nro_pasajes">
+    </div>
+    <div>
+      <label for="clase">Clase del Tiquete:</label>
+      <select name="clase">
+        <option value="EJ">Ejecutiva</option>
+        <option value="EC">Economica</option>
+      </select>
+    </div>
+    <div>
+      <input type="submit" value="Buscar">
+    </div>
+  </form>
+  <form method="POST" enctype="multipart/form-data">
+    
+  </form>
+  
+</body>
+</html>
