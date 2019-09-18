@@ -34,6 +34,9 @@ envTest/Scripts/activate
 _Finalmente, se instalan las dependencias necesarios por medio del siguiente comando._
 
 ```
-pip install django mysql-connector-python cymysql django-cymysql unipath
+pip install django mysql-connector-python cymysql django-cymysql
 ```
 
+### Data base📋
+
+_Para configurar la base de datos, se puede crear con el archivo .sql dentro de la caperta dataDB a una base de datos nueva, o tambien se puede generar por medio de la migracion del modelo definido en la app 'flight_search_
